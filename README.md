@@ -6,7 +6,7 @@ Designed inspired by [Shakuro](https://dribbble.com/shots/15069063-Airline-App/a
 <p float="left">
   <img src="https://raw.githubusercontent.com/martinoyovo/flutter-airline-app/main/screenshots/home.png" width="200" />
   <img src="https://raw.githubusercontent.com/martinoyovo/flutter-banking-app/main/screenshots/search.png" width="200" />
-  <img src="https://raw.githubusercontent.com/martinoyovo/flutter-banking-app/main/screenshots/ticket.png" width="200" />
+  <img src="https://raw.githubusercontent.com/martinoyovo/flutter-banking-app/main/screenshots/tickets.png" width="200" />
   <img src="https://raw.githubusercontent.com/martinoyovo/flutter-banking-app/main/screenshots/profile.png" width="200" />
 </p>
 
