@@ -14,6 +14,7 @@ Designed inspired by [Shakuro](https://dribbble.com/shots/15069063-Airline-App/a
 Run these command lines
 - [ ] ```git clone https://github.com/martinoyovo/flutter-airline-app.git```
 - [ ] ```flutter clean && flutter packages get```
+- [ ] ```flutter run```
 
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
