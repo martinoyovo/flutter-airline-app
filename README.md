@@ -1,7 +1,7 @@
 # 🤩🤩🛩🛩🛩 Airline App
 
 App where you can learn everything you need to know about your next journey and how to make it safe, hassle-free, and on budget. It has information on your scheduled flights, reward miles, best hotel deals, and more.
-Designed inspired by [Shakuro](https://dribbble.com/shots/15069063-Airline-App/attachments/6797629?mode=media).
+Design inspired from [Shakuro](https://dribbble.com/shots/15069063-Airline-App/attachments/6797629?mode=media).
 
 <p float="left">
   <img src="https://raw.githubusercontent.com/martinoyovo/flutter-airline-app/main/screenshots/home.png" width="220" />
