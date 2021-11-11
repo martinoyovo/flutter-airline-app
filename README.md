@@ -1,12 +1,20 @@
-# airline_app
+# 🤩🤩🛩🛩🛩 Airline App
 
-A new Flutter project.
+App where you can learn everything you need to know about your next journey and how to make it safe, hassle-free, and on budget. It has information on your scheduled flights, reward miles, best hotel deals, and more.
+Designed inspired by [Shakuro](https://dribbble.com/shots/15069063-Airline-App/attachments/6797629?mode=media).
 
-## Getting Started
+<p float="left">
+  <img src="https://github.com/martinoyovo/flutter-banking-app/blob/main/screenshots/home.png" width="200" />
+  <img src="https://raw.githubusercontent.com/martinoyovo/flutter-banking-app/main/screenshots/search.png" width="200" />
+    <img src="https://raw.githubusercontent.com/martinoyovo/flutter-banking-app/main/screenshots/ticket.png" width="200" />
+    <img src="https://raw.githubusercontent.com/martinoyovo/flutter-banking-app/main/screenshots/profile.png" width="200" />
+</p>
 
-This project is a starting point for a Flutter application.
+## How to proceed ?
+Run these command lines
+- [ ] ```git clone https://github.com/martinoyovo/flutter-airline-app.git``
+- [ ] ````flutter clean && flutter packages get``
 
-A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
