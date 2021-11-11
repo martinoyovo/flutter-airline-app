@@ -1,0 +1,50 @@
+name: airline_app
+description: A new Flutter project.
+
+
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+
+
+  cupertino_icons: ^1.0.4
+  get: ^4.3.8
+  shimmer: ^2.0.0
+  shared_preferences: ^2.0.8
+  gap: ^2.0.0
+  barcode_widget: ^2.0.1
+  fluentui_icons: ^1.0.0
+
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.9.2
+  flutter_test:
+    sdk: flutter
+
+# To add launcher icon to your application, uncomment this and update image_path with your launcher icon path:
+# flutter_icons:
+#   ios: false
+#   android: "launcher_icon"
+#   image_path: "assets/ic_launcher.png"
+
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/fonts/
+
