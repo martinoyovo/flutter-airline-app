@@ -355,7 +355,7 @@ class Tickets extends StatelessWidget {
               ),
               Gap(20),
               Container(
-                padding: EdgeInsets.only(left: 30, right: 15),
+                padding: EdgeInsets.only(left: 15, right: 0),
                 child: TicketView(isOrange: true,)
               )
             ],
