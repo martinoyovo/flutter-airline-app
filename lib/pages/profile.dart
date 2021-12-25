@@ -105,26 +105,28 @@ class Profile extends StatelessWidget {
                   borderRadius: BorderRadius.circular(18),
                 ),
                 padding: EdgeInsets.symmetric(horizontal: 25, vertical: 20),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    CircleAvatar(
-                      child: Icon(FluentSystemIcons.ic_fluent_lightbulb_filament_filled, color: Styles.orangeColor, size: 27,),
-                      backgroundColor: Colors.white,
-                      maxRadius: 25,
-                    ),
-                    Gap(20),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Text('You\'ve got a new award', style: Styles.headline2Style.copyWith(fontWeight: FontWeight.bold, color: Colors.white), textAlign: TextAlign.center,),
-                        Gap(2),
-                        Text('You have 150 flights in a year', style: TextStyle(fontWeight: FontWeight.w500, fontSize: 16, color: Colors.white.withOpacity(0.9)), textAlign: TextAlign.center,),
-                      ],
-                    ),
-                  ],
+                child: FittedBox(
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      CircleAvatar(
+                        child: Icon(FluentSystemIcons.ic_fluent_lightbulb_filament_filled, color: Styles.orangeColor, size: 27,),
+                        backgroundColor: Colors.white,
+                        maxRadius: 25,
+                      ),
+                      Gap(12),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Text('You\'ve got a new award', style: Styles.headline2Style.copyWith(fontWeight: FontWeight.bold, color: Colors.white), textAlign: TextAlign.center,),
+                          Gap(2),
+                          Text('You have 150 flights in a year', style: TextStyle(fontWeight: FontWeight.w500, fontSize: 16, color: Colors.white.withOpacity(0.9)), textAlign: TextAlign.center,),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
