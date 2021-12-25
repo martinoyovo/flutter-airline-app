@@ -36,7 +36,7 @@ class TicketView extends StatelessWidget{
                   Row(
                     children: <Widget>[
                       Text('NYC', style: isOrange == null ? Styles.headline3Style : Styles.headline3Style.copyWith(color: Colors.white)),
-                      Gap(65),
+                      Spacer(),
                       Container(
                         padding: EdgeInsets.all(3),
                         decoration: BoxDecoration(
@@ -74,7 +74,7 @@ class TicketView extends StatelessWidget{
                           borderRadius: BorderRadius.circular(20),
                         ),
                       ),
-                      Gap(65),
+                      Spacer(),
                       Text('LDN', style: isOrange == null ? Styles.headline3Style : Styles.headline3Style.copyWith(color: Colors.white)),
                     ],
                   ),
