@@ -11,7 +11,7 @@ Design inspired by [Shakuro](https://dribbble.com/shots/15069063-Airline-App/att
 </p>
 
 ## Get Started
-Run these command lines
+Run:
 - [ ] ```git clone https://github.com/martinoyovo/flutter-airline-app.git```
 - [ ] ```flutter clean```
 - [ ] ```flutter packages get```
