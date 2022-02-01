@@ -4,16 +4,17 @@ App where you can learn everything you need to know about your next journey and 
 Design inspired by [Shakuro](https://dribbble.com/shots/15069063-Airline-App/attachments/6797629?mode=media).
 
 <p float="left">
-  <img src="https://raw.githubusercontent.com/martinoyovo/flutter-airline-app/main/screenshots/home.png" width="220" />
-  <img src="https://raw.githubusercontent.com/martinoyovo/flutter-airline-app/main/screenshots/search.png" width="220" />
-  <img src="https://raw.githubusercontent.com/martinoyovo/flutter-airline-app/main/screenshots/tickets.png" width="220" />
-  <img src="https://raw.githubusercontent.com/martinoyovo/flutter-airline-app/main/screenshots/profile.png" width="220" />
+  <img src="https://raw.githubusercontent.com/martinoyovo/flutter-airline-app/main/screenshots/home.png" width="200" />
+  <img src="https://raw.githubusercontent.com/martinoyovo/flutter-airline-app/main/screenshots/search.png" width="200" />
+  <img src="https://raw.githubusercontent.com/martinoyovo/flutter-airline-app/main/screenshots/tickets.png" width="200" />
+  <img src="https://raw.githubusercontent.com/martinoyovo/flutter-airline-app/main/screenshots/profile.png" width="200" />
 </p>
 
-## How to proceed ?
+## Get Started
 Run these command lines
 - [ ] ```git clone https://github.com/martinoyovo/flutter-airline-app.git```
-- [ ] ```flutter clean && flutter packages get```
+- [ ] ```flutter clean```
+- [ ] ```flutter packages get```
 - [ ] ```flutter run```
 
 
@@ -23,3 +24,6 @@ Run these command lines
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+- [@martinoyovo](https://linkedin.com/in/martino-yovo)
