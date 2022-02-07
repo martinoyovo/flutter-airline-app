@@ -16,6 +16,6 @@ AppBar myAppBar({required String title, String? color, required bool implyLeadin
           icon: Icon(CupertinoIcons.arrow_left, size: 33, color: Styles.primaryColor),
           onPressed: () => Get.back(),
         )
-    ) : SizedBox(),
+    ) : const SizedBox(),
   );
 }

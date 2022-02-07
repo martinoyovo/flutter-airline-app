@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class Tickets extends StatelessWidget {
+  const Tickets({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,35 +16,35 @@ class Tickets extends StatelessWidget {
       body: Stack(
         children: [
           ListView(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             children: [
-              Gap(60),
+              const Gap(60),
               Text('Tickets', style: Styles.headline1Style.copyWith(fontSize: 35),),
-              Gap(20),
+              const Gap(20),
               FittedBox(
                 child: Container(
-                  padding: EdgeInsets.all(3.5),
+                  padding: const EdgeInsets.all(3.5),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50),
-                    color: Color(0xFFF4F6FD)
+                    color: const Color(0xFFF4F6FD)
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
                         width: size.width*0.44,
-                        padding: EdgeInsets.symmetric(vertical: 7),
-                        decoration: BoxDecoration(
+                        padding: const EdgeInsets.symmetric(vertical: 7),
+                        decoration: const BoxDecoration(
                             borderRadius: BorderRadius.horizontal(left: Radius.circular(50)),
                             color: Colors.white
                         ),
                         child: Center(child: Text('Upcoming', style: Styles.subtitle1Style.copyWith(fontWeight: FontWeight.w600, color: Styles.textColor),)),
                       ),
-                      Gap(5),
+                      const Gap(5),
                       Container(
                         width: size.width*0.44,
-                        padding: EdgeInsets.symmetric(vertical: 7),
-                        decoration: BoxDecoration(
+                        padding: const EdgeInsets.symmetric(vertical: 7),
+                        decoration: const BoxDecoration(
                             borderRadius: BorderRadius.horizontal(right: Radius.circular(50)),
                             color: Colors.transparent
                         ),
@@ -53,14 +54,14 @@ class Tickets extends StatelessWidget {
                   ),
                 ),
               ),
-              Gap(25),
+              const Gap(25),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
                     Container(
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
                         color: Colors.white,
                           boxShadow: [
@@ -70,18 +71,18 @@ class Tickets extends StatelessWidget {
                                 spreadRadius: 1
                             )
                           ],
-                          borderRadius: BorderRadius.only(topLeft: Radius.circular(22),topRight: Radius.circular(22))
+                          borderRadius: const BorderRadius.only(topLeft: Radius.circular(22),topRight: Radius.circular(22))
                       ),
                       child: Column(
                         children: <Widget>[
                           Row(
                             children: <Widget>[
                               Text('NYC', style: Styles.headline3Style),
-                              Gap(65),
+                              const Gap(65),
                               Container(
-                                padding: EdgeInsets.all(3),
+                                padding: const EdgeInsets.all(3),
                                 decoration: BoxDecoration(
-                                  border: Border.all(color: Color(0xFF8ACCF7), width: 2.5),
+                                  border: Border.all(color: const Color(0xFF8ACCF7), width: 2.5),
                                   borderRadius: BorderRadius.circular(20),
                                 ),
                               ),
@@ -103,23 +104,23 @@ class Tickets extends StatelessWidget {
                                           );
                                         },),
                                       ),
-                                      Center(child: Transform.rotate(angle: 1.5,child: Icon(Icons.local_airport_rounded, color: Color(0xFF8ACCF7), size: 24,),))
+                                      Center(child: Transform.rotate(angle: 1.5,child: const Icon(Icons.local_airport_rounded, color: Color(0xFF8ACCF7), size: 24,),))
                                     ],
                                   ),
                                 ),
                               ),
                               Container(
-                                padding: EdgeInsets.all(3),
+                                padding: const EdgeInsets.all(3),
                                 decoration: BoxDecoration(
-                                  border: Border.all(color: Color(0xFF8ACCF7), width: 2.5),
+                                  border: Border.all(color: const Color(0xFF8ACCF7), width: 2.5),
                                   borderRadius: BorderRadius.circular(20),
                                 ),
                               ),
-                              Gap(65),
+                              const Gap(65),
                               Text('LDN', style: Styles.headline3Style),
                             ],
                           ),
-                          Gap(1),
+                          const Gap(1),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
@@ -140,7 +141,7 @@ class Tickets extends StatelessWidget {
                             width: 10,
                             child: DecoratedBox(
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.horizontal(right: Radius.circular(50)),
+                                borderRadius: const BorderRadius.horizontal(right: Radius.circular(50)),
                                 color: Colors.grey.shade50,
 
                               ),
@@ -166,7 +167,7 @@ class Tickets extends StatelessWidget {
                             width: 10,
                             child: DecoratedBox(
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.horizontal(left: Radius.circular(50)),
+                                borderRadius: const BorderRadius.horizontal(left: Radius.circular(50)),
                                 color: Colors.grey.shade50,
 
                               ),
@@ -176,23 +177,23 @@ class Tickets extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      padding: EdgeInsets.symmetric(vertical: 10),
+                      padding: const EdgeInsets.symmetric(vertical: 10),
                       decoration: BoxDecoration(
                           color: Colors.white,
                           boxShadow: [
                             BoxShadow(
                               color: Colors.grey.shade200,
-                              offset: Offset(0, 1),
+                              offset: const Offset(0, 1),
                               blurRadius: 1,
                               spreadRadius: 0,
                             )
                           ],
-                          borderRadius: BorderRadius.only(bottomLeft: Radius.circular(22),bottomRight: Radius.circular(22))
+                          borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(22),bottomRight: Radius.circular(22))
                       ),
                       child: Column(
                         children: [
                           Container(
-                            padding: EdgeInsets.symmetric(horizontal: 15),
+                            padding: const EdgeInsets.symmetric(horizontal: 15),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
@@ -200,7 +201,7 @@ class Tickets extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text('1 May', style: Styles.headline3Style),
-                                    Gap(5),
+                                    const Gap(5),
                                     Text('Date', style: Styles.subtitle1Style),
                                   ],
                                 ),
@@ -208,7 +209,7 @@ class Tickets extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     Text('08:00 AM', style: Styles.headline3Style),
-                                    Gap(5),
+                                    const Gap(5),
                                     Text('Departure time', style: Styles.subtitle1Style),
                                   ],
                                 ),
@@ -216,7 +217,7 @@ class Tickets extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Text('23', style: Styles.headline3Style),
-                                    Gap(5),
+                                    const Gap(5),
                                     Text('Number', style: Styles.subtitle1Style),
                                   ],
                                 ),
@@ -228,7 +229,7 @@ class Tickets extends StatelessWidget {
                               child: Divider(color: Colors.grey.shade300,)
                           ),
                           Container(
-                            padding: EdgeInsets.symmetric(horizontal: 15),
+                            padding: const EdgeInsets.symmetric(horizontal: 15),
                             child: Column(
                               children: [
                                 Row(
@@ -238,7 +239,7 @@ class Tickets extends StatelessWidget {
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text('Flutter Dash', style: Styles.headline3Style),
-                                        Gap(5),
+                                        const Gap(5),
                                         Text('Passenger', style: Styles.subtitle1Style),
                                       ],
                                     ),
@@ -246,7 +247,7 @@ class Tickets extends StatelessWidget {
                                       crossAxisAlignment: CrossAxisAlignment.end,
                                       children: [
                                         Text('5221 478566', style: Styles.headline3Style),
-                                        Gap(5),
+                                        const Gap(5),
                                         Text('Passport', style: Styles.subtitle1Style),
                                       ],
                                     ),
@@ -272,7 +273,7 @@ class Tickets extends StatelessWidget {
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text('0055 444 77147', style: Styles.headline3Style),
-                                        Gap(5),
+                                        const Gap(5),
                                         Text('Number of E-ticket', style: Styles.subtitle1Style),
                                       ],
                                     ),
@@ -280,7 +281,7 @@ class Tickets extends StatelessWidget {
                                       crossAxisAlignment: CrossAxisAlignment.end,
                                       children: [
                                         Text('B2SG28', style: Styles.headline3Style),
-                                        Gap(5),
+                                        const Gap(5),
                                         Text('Booking code', style: Styles.subtitle1Style),
                                       ],
                                     ),
@@ -311,7 +312,7 @@ class Tickets extends StatelessWidget {
                                             Text(' *** 2462', style: Styles.headline3Style),
                                           ],
                                         ),
-                                        Gap(5),
+                                        const Gap(5),
                                         Text('Payment method', style: Styles.subtitle1Style),
                                       ],
                                     ),
@@ -319,7 +320,7 @@ class Tickets extends StatelessWidget {
                                       crossAxisAlignment: CrossAxisAlignment.end,
                                       children: [
                                         Text('\$249.99', style: Styles.headline3Style),
-                                        Gap(5),
+                                        const Gap(5),
                                         Text('Price', style: Styles.subtitle1Style),
                                       ],
                                     ),
@@ -333,7 +334,7 @@ class Tickets extends StatelessWidget {
                             child: Divider(color: Colors.grey.shade300,)
                           ),
                           Container(
-                            padding: EdgeInsets.symmetric(horizontal: 15),
+                            padding: const EdgeInsets.symmetric(horizontal: 15),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(14),
                               child: BarcodeWidget(
@@ -346,17 +347,17 @@ class Tickets extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Gap(10)
+                          const Gap(10)
                         ],
                       ),
                     ),
                   ],
                 ),
               ),
-              Gap(20),
+              const Gap(20),
               Container(
-                padding: EdgeInsets.only(left: 15, right: 0),
-                child: TicketView(isOrange: true,)
+                padding: const EdgeInsets.only(left: 15, right: 0),
+                child: const TicketView(isOrange: true,)
               )
             ],
           ),
@@ -364,7 +365,7 @@ class Tickets extends StatelessWidget {
             top: 295,
             left: 19,
             child: Container(
-              padding: EdgeInsets.all(3),
+              padding: const EdgeInsets.all(3),
               decoration: BoxDecoration(
                 border: Border.all(color: Styles.textColor, width: 2),
                shape: BoxShape.circle
@@ -379,7 +380,7 @@ class Tickets extends StatelessWidget {
             top: 295,
             right: 19,
             child: Container(
-              padding: EdgeInsets.all(3),
+              padding: const EdgeInsets.all(3),
               decoration: BoxDecoration(
                 border: Border.all(color: Styles.textColor, width: 2),
                shape: BoxShape.circle
