@@ -14,14 +14,14 @@ class TicketView extends StatelessWidget{
       width: size.width*0.85,
       height: 200,
       child: Container(
-        margin: EdgeInsets.only(right: 15),
+        margin: const EdgeInsets.only(right: 15),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Container(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                  color: isOrange == null ? Colors.white : Color(0xFFF37B67),
+                  color: isOrange == null ? Colors.white : const Color(0xFFF37B67),
                   boxShadow: isOrange == true ? [] : [
                     BoxShadow(
                       color: Colors.grey.shade100,
@@ -29,18 +29,18 @@ class TicketView extends StatelessWidget{
                       spreadRadius: 2
                     )
                   ],
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(21),topRight: Radius.circular(21))
+                  borderRadius: const BorderRadius.only(topLeft: Radius.circular(21),topRight: Radius.circular(21))
               ),
               child: Column(
                 children: <Widget>[
                   Row(
                     children: <Widget>[
                       Text('NYC', style: isOrange == null ? Styles.headline3Style : Styles.headline3Style.copyWith(color: Colors.white)),
-                      Spacer(),
+                      const Spacer(),
                       Container(
-                        padding: EdgeInsets.all(3),
+                        padding: const EdgeInsets.all(3),
                         decoration: BoxDecoration(
-                            border: Border.all(color: isOrange == null ? Color(0xFF8ACCF7) : Colors.white, width: 2.5),
+                            border: Border.all(color: isOrange == null ? const Color(0xFF8ACCF7) : Colors.white, width: 2.5),
                             borderRadius: BorderRadius.circular(20),
                         ),
                       ),
@@ -62,23 +62,23 @@ class TicketView extends StatelessWidget{
                                   );
                                 },),
                               ),
-                              Center(child: Transform.rotate(angle: 1.5,child: Icon(Icons.local_airport_rounded, color: isOrange == null ? Color(0xFF8ACCF7) : Colors.white, size: 24,),))
+                              Center(child: Transform.rotate(angle: 1.5,child: Icon(Icons.local_airport_rounded, color: isOrange == null ? const Color(0xFF8ACCF7) : Colors.white, size: 24,),))
                             ],
                           ),
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.all(3),
+                        padding: const EdgeInsets.all(3),
                         decoration: BoxDecoration(
-                          border: Border.all(color: isOrange == null ? isOrange == null ? Color(0xFF8ACCF7) : Colors.white : Colors.white, width: 2.5),
+                          border: Border.all(color: isOrange == null ? isOrange == null ? const Color(0xFF8ACCF7) : Colors.white : Colors.white, width: 2.5),
                           borderRadius: BorderRadius.circular(20),
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Text('LDN', style: isOrange == null ? Styles.headline3Style : Styles.headline3Style.copyWith(color: Colors.white)),
                     ],
                   ),
-                  Gap(1),
+                  const Gap(1),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
@@ -91,7 +91,7 @@ class TicketView extends StatelessWidget{
               ),
             ),
             Container(
-              color: isOrange == null ? Colors.white : Color(0xFFF37B67),
+              color: isOrange == null ? Colors.white : const Color(0xFFF37B67),
               child: Row(
                 children: <Widget>[
                   SizedBox(
@@ -99,7 +99,7 @@ class TicketView extends StatelessWidget{
                     width: 10,
                     child: DecoratedBox(
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.only(topRight: Radius.circular(10),bottomRight: Radius.circular(10)),
+                          borderRadius: const BorderRadius.only(topRight: Radius.circular(10),bottomRight: Radius.circular(10)),
                           color: isOrange == true ? Colors.white : Colors.grey.shade200,
 
                       ),
@@ -125,7 +125,7 @@ class TicketView extends StatelessWidget{
                     width: 10,
                     child: DecoratedBox(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(topLeft: Radius.circular(10),bottomLeft: Radius.circular(10)),
+                        borderRadius: const BorderRadius.only(topLeft: Radius.circular(10),bottomLeft: Radius.circular(10)),
                         color: isOrange == true ? Colors.white : Colors.grey.shade200,
 
                       ),
@@ -135,18 +135,18 @@ class TicketView extends StatelessWidget{
               ),
             ),
             Container(
-              padding: EdgeInsets.fromLTRB(16, 10, 16, 16),
+              padding: const EdgeInsets.fromLTRB(16, 10, 16, 16),
               decoration: BoxDecoration(
-                  color: isOrange == null ? Colors.white : Color(0xFFF37B67),
+                  color: isOrange == null ? Colors.white : const Color(0xFFF37B67),
                   boxShadow: isOrange == true ? [] : [
                     BoxShadow(
                       color: Colors.grey.shade200,
-                      offset: Offset(0, 2),
+                      offset: const Offset(0, 2),
                       blurRadius: 2,
                       spreadRadius: 0,
                     )
                   ],
-                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(21),bottomRight: Radius.circular(21))
+                  borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(21),bottomRight: Radius.circular(21))
               ),
               child: Column(
                 children: [
@@ -157,7 +157,7 @@ class TicketView extends StatelessWidget{
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text('1 May', style: isOrange == null ? Styles.headline3Style : Styles.headline3Style.copyWith(color: Colors.white)),
-                          Gap(5),
+                          const Gap(5),
                           Text('Date', style: isOrange == null ? Styles.subtitle1Style : Styles.subtitle1Style.copyWith(color: Colors.white)),
                         ],
                       ),
@@ -165,7 +165,7 @@ class TicketView extends StatelessWidget{
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Text('08:00 AM', style: isOrange == null ? Styles.headline3Style : Styles.headline3Style.copyWith(color: Colors.white)),
-                          Gap(5),
+                          const Gap(5),
                           Text('Departure time', style: isOrange == null ? Styles.subtitle1Style : Styles.subtitle1Style.copyWith(color: Colors.white)),
                         ],
                       ),
@@ -173,7 +173,7 @@ class TicketView extends StatelessWidget{
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Text('23', style: isOrange == null ? Styles.headline3Style : Styles.headline3Style.copyWith(color: Colors.white)),
-                          Gap(5),
+                          const Gap(5),
                           Text('Number', style: isOrange == null ? Styles.subtitle1Style : Styles.subtitle1Style.copyWith(color: Colors.white)),
                         ],
                       ),

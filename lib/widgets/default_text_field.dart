@@ -7,23 +7,23 @@ import 'package:airline_app/utils/strings.dart';
 import 'package:airline_app/utils/styles.dart';
 
 class DefaultTextField extends StatelessWidget {
-  const DefaultTextField(
-      {Key? key,
-      this.focusNode,
-      required this.controller,
-      required this.label,
-      this.mandatory = true,
-      this.obscure = false,
-      this.validator,
-      this.prefixIcon,
-      this.suffixIcon,
-      this.keyboardType,
-      this.onFieldSubmitted,
-      this.textInputAction,
-      this.enabled,
-      this.maxLines, this.hideTitle,
-      })
-      : super(key: key);
+  const DefaultTextField({
+    Key? key,
+    this.focusNode,
+    required this.controller,
+    required this.label,
+    this.mandatory = true,
+    this.obscure = false,
+    this.validator,
+    this.prefixIcon,
+    this.suffixIcon,
+    this.keyboardType,
+    this.onFieldSubmitted,
+    this.textInputAction,
+    this.enabled,
+    this.maxLines,
+    this.hideTitle,
+  }) : super(key: key);
 
   DefaultTextField.password({
     this.enabled,
@@ -38,7 +38,9 @@ class DefaultTextField extends StatelessWidget {
     this.textInputAction,
     bool isConPass = false,
     String? label,
-    this.prefixIcon, this.hideTitle,
+    this.prefixIcon,
+    this.hideTitle,
+    Key? key,
   })  : label = isConPass ? confirmPwd : pwd,
         mandatory = true,
         suffixIcon = IconButton(
@@ -46,7 +48,8 @@ class DefaultTextField extends StatelessWidget {
             obscure ? CupertinoIcons.eye_fill : CupertinoIcons.eye_slash_fill,
           ),
           onPressed: hideShowPas,
-        );
+        ),
+        super(key: key);
 
   final FocusNode? focusNode;
   final TextEditingController? controller;
@@ -73,7 +76,7 @@ class DefaultTextField extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         label == "Message" || label == "Titre" || hideTitle == true
-            ? SizedBox()
+            ? const SizedBox()
             : Text(
                 _label,
                 style: TextStyle(
@@ -92,7 +95,7 @@ class DefaultTextField extends StatelessWidget {
           textInputAction: textInputAction ?? TextInputAction.next,
           onFieldSubmitted: onFieldSubmitted,
           validator: (value) {
-            if(label == promoCode || label == phone) {
+            if (label == promoCode || label == phone) {
               return null;
             } else {
               if (value!.isEmpty) {

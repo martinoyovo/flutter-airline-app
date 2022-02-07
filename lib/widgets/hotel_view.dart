@@ -13,7 +13,7 @@ class HotelView extends StatelessWidget{
     return Container(
       width: size.width*0.6,
       height: 350,
-      margin: EdgeInsets.only(right: 17, top: 5),
+      margin: const EdgeInsets.only(right: 17, top: 5),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(24),
@@ -25,7 +25,7 @@ class HotelView extends StatelessWidget{
           )
         ],
       ),
-      padding: EdgeInsets.symmetric(horizontal: 15, vertical: 17),
+      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 17),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -40,11 +40,11 @@ class HotelView extends StatelessWidget{
               )
             ),
           ),
-          Gap(10),
+          const Gap(10),
           Text(hotel['place'], style: Styles.headline2Style.copyWith(fontWeight: FontWeight.w600),),
-          Gap(5),
+          const Gap(5),
           Text(hotel['destination'], style: Styles.subtitle1Style),
-          Gap(8),
+          const Gap(8),
           Text('\$${hotel['price']}/night', style: Styles.headline1Style.copyWith(),),
         ],
       ),

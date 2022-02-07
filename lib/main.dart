@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Styles.primaryColor,
       ),
-      home: BottomNav()
+      home: const BottomNav()
     );
   }
 }

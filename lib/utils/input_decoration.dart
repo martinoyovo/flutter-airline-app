@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:airline_app/utils/size_config.dart';
 import 'package:airline_app/utils/styles.dart';
