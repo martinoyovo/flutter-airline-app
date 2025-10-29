@@ -6,7 +6,7 @@ import 'package:gap/gap.dart';
 class TicketView extends StatelessWidget{
   final bool? isOrange;
 
-  const TicketView({Key? key, this.isOrange}) : super(key: key);
+  const TicketView({super.key, this.isOrange});
   @override
   Widget build(BuildContext context) {
     final size = Layouts.getSize(context);
@@ -53,12 +53,12 @@ class TicketView extends StatelessWidget{
                                 height: 24,
                                 child: LayoutBuilder(builder: (context,constraints){
                                   return Flex(
-                                    children: List.generate((constraints.constrainWidth()/6).floor(), (index) =>
-                                        SizedBox(height: 1,width: 3,child: DecoratedBox(decoration: BoxDecoration(color: isOrange == true ? Colors.white : Colors.grey.shade300),),)
-                                    ),
                                     direction: Axis.horizontal,
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: List.generate((constraints.constrainWidth()/6).floor(), (index) =>
+                                        SizedBox(height: 1,width: 3,child: DecoratedBox(decoration: BoxDecoration(color: isOrange == true ? Colors.white : Colors.grey.shade300),),)
+                                    ),
                                   );
                                 },),
                               ),
@@ -110,12 +110,12 @@ class TicketView extends StatelessWidget{
                       padding: const EdgeInsets.all(12.0),
                       child: LayoutBuilder(builder: (context,constraints){
                         return Flex(
-                          children: List.generate((constraints.constrainWidth()/15).floor(), (index) =>
-                              SizedBox(height: 1,width: 5,child: DecoratedBox(decoration: BoxDecoration(color: isOrange == true ? Colors.white : Colors.grey.shade300),),)
-                          ),
                           direction: Axis.horizontal,
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: List.generate((constraints.constrainWidth()/15).floor(), (index) =>
+                              SizedBox(height: 1,width: 5,child: DecoratedBox(decoration: BoxDecoration(color: isOrange == true ? Colors.white : Colors.grey.shade300),),)
+                          ),
                         );
                       },),
                     ),

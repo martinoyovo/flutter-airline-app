@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class Profile extends StatelessWidget {
-  const Profile({Key? key}) : super(key: key);
+  const Profile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,35 +26,54 @@ class Profile extends StatelessWidget {
                   color: const Color(0xFFF37B67),
                   borderRadius: BorderRadius.circular(20),
                 ),
-                child: Image.asset('assets/images/dash.png', fit: BoxFit.cover,),
+                child: Image.asset(
+                  'assets/images/dash.png',
+                  fit: BoxFit.cover,
+                ),
               ),
               const Gap(10),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Text('Flutter Dash', style: Styles.headline1Style,),
+                  Text(
+                    'Flutter Dash',
+                    style: Styles.headline1Style,
+                  ),
                   const Gap(2),
-                  Text('New-York', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.grey.shade500),),
+                  Text(
+                    'New-York',
+                    style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.grey.shade500),
+                  ),
                   const Gap(8),
                   Container(
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(100),
-                      color: const Color(0xFFFEF4F3)
-                    ),
-                    padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 3),
+                        borderRadius: BorderRadius.circular(100),
+                        color: const Color(0xFFFEF4F3)),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 3, vertical: 3),
                     child: Row(
                       children: [
                         Container(
                           decoration: const BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: Color(0xFFF37B67)
-                          ),
+                              shape: BoxShape.circle, color: Color(0xFFF37B67)),
                           padding: const EdgeInsets.all(3),
-                          child: const Icon(FluentSystemIcons.ic_fluent_shield_filled, color: Colors.white, size: 15,),
+                          child: const Icon(
+                            FluentSystemIcons.ic_fluent_shield_filled,
+                            color: Colors.white,
+                            size: 15,
+                          ),
                         ),
                         const Gap(6),
-                        const Text('Premium status', style: TextStyle(color: Color(0xFFF37B67), fontWeight: FontWeight.w600),),
+                        const Text(
+                          'Premium status',
+                          style: TextStyle(
+                              color: Color(0xFFF37B67),
+                              fontWeight: FontWeight.w600),
+                        ),
                         const Gap(6)
                       ],
                     ),
@@ -67,14 +86,21 @@ class Profile extends StatelessWidget {
                 children: [
                   const Gap(6),
                   InkWell(
-                    child: Text('Edit', style: Styles.textStyle.copyWith(color: Styles.primaryColor, fontWeight: FontWeight.w500),),
+                    child: Text(
+                      'Edit',
+                      style: Styles.textStyle.copyWith(
+                          color: Styles.primaryColor,
+                          fontWeight: FontWeight.w500),
+                    ),
                   ),
                 ],
               )
             ],
           ),
           const Gap(8),
-          Divider(color: Colors.grey.shade300,),
+          Divider(
+            color: Colors.grey.shade300,
+          ),
           const Gap(8),
           Stack(
             children: [
@@ -93,10 +119,9 @@ class Profile extends StatelessWidget {
                   padding: const EdgeInsets.all(30),
                   decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      border: Border.all(width: 18, color: const Color(
-                          0xFF264CD2)),
-                      color: Colors.transparent
-                  ),
+                      border:
+                          Border.all(width: 18, color: const Color(0xFF264CD2)),
+                      color: Colors.transparent),
                 ),
               ),
               Container(
@@ -104,25 +129,43 @@ class Profile extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(18),
                 ),
-                padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
                 child: FittedBox(
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       CircleAvatar(
-                        child: Icon(FluentSystemIcons.ic_fluent_lightbulb_filament_filled, color: Styles.orangeColor, size: 27,),
                         backgroundColor: Colors.white,
                         maxRadius: 25,
+                        child: Icon(
+                          FluentSystemIcons.ic_fluent_lightbulb_filament_filled,
+                          color: Styles.orangeColor,
+                          size: 27,
+                        ),
                       ),
                       const Gap(12),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Text('You\'ve got a new award', style: Styles.headline2Style.copyWith(fontWeight: FontWeight.bold, color: Colors.white), textAlign: TextAlign.center,),
+                          Text(
+                            'You\'ve got a new award',
+                            style: Styles.headline2Style.copyWith(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
+                            textAlign: TextAlign.center,
+                          ),
                           const Gap(2),
-                          Text('You have 150 flights in a year', style: TextStyle(fontWeight: FontWeight.w500, fontSize: 16, color: Colors.white.withOpacity(0.9)), textAlign: TextAlign.center,),
+                          Text(
+                            'You have 150 flights in a year',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 16,
+                                color: Colors.white.withValues(alpha: 0.9)),
+                            textAlign: TextAlign.center,
+                          ),
                         ],
                       ),
                     ],
@@ -132,7 +175,10 @@ class Profile extends StatelessWidget {
             ],
           ),
           const Gap(25),
-          Text('Accumulated miles', style: Styles.headline2Style,),
+          Text(
+            'Accumulated miles',
+            style: Styles.headline2Style,
+          ),
           const Gap(20),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 15),
@@ -141,26 +187,33 @@ class Profile extends StatelessWidget {
               color: Styles.bgColor,
               boxShadow: [
                 BoxShadow(
-                  color: Colors.grey.shade200,
-                  blurRadius: 1,
-                  spreadRadius: 1
-                )
+                    color: Colors.grey.shade200, blurRadius: 1, spreadRadius: 1)
               ],
             ),
             child: Column(
               children: [
                 const Gap(15),
-                Text('192802', style: TextStyle(fontSize: 45, color: Styles.textColor, fontWeight: FontWeight.w600),),
+                Text(
+                  '192802',
+                  style: TextStyle(
+                      fontSize: 45,
+                      color: Styles.textColor,
+                      fontWeight: FontWeight.w600),
+                ),
                 const Gap(20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('Miles accrued', style: Styles.subtitle1Style.copyWith(fontSize: 16)),
-                    Text('23 May 2021', style: Styles.subtitle1Style.copyWith(fontSize: 16)),
+                    Text('Miles accrued',
+                        style: Styles.subtitle1Style.copyWith(fontSize: 16)),
+                    Text('23 May 2021',
+                        style: Styles.subtitle1Style.copyWith(fontSize: 16)),
                   ],
                 ),
                 const Gap(4),
-                Divider(color: Colors.grey.shade300,),
+                Divider(
+                  color: Colors.grey.shade300,
+                ),
                 const Gap(4),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -170,7 +223,9 @@ class Profile extends StatelessWidget {
                       children: [
                         Text('23 042', style: Styles.headline3Style),
                         const Gap(5),
-                        Text('Miles', style: Styles.subtitle1Style.copyWith(fontSize: 16)),
+                        Text('Miles',
+                            style:
+                                Styles.subtitle1Style.copyWith(fontSize: 16)),
                       ],
                     ),
                     Column(
@@ -178,7 +233,9 @@ class Profile extends StatelessWidget {
                       children: [
                         Text('Airline CO', style: Styles.headline3Style),
                         const Gap(5),
-                        Text('Received from', style: Styles.subtitle1Style.copyWith(fontSize: 16)),
+                        Text('Received from',
+                            style:
+                                Styles.subtitle1Style.copyWith(fontSize: 16)),
                       ],
                     ),
                   ],
@@ -194,7 +251,9 @@ class Profile extends StatelessWidget {
                       children: [
                         Text('24', style: Styles.headline3Style),
                         const Gap(5),
-                        Text('Miles', style: Styles.subtitle1Style.copyWith(fontSize: 16)),
+                        Text('Miles',
+                            style:
+                                Styles.subtitle1Style.copyWith(fontSize: 16)),
                       ],
                     ),
                     Column(
@@ -202,7 +261,9 @@ class Profile extends StatelessWidget {
                       children: [
                         Text('McDonal\'s', style: Styles.headline3Style),
                         const Gap(5),
-                        Text('Received from', style: Styles.subtitle1Style.copyWith(fontSize: 16)),
+                        Text('Received from',
+                            style:
+                                Styles.subtitle1Style.copyWith(fontSize: 16)),
                       ],
                     ),
                   ],
@@ -218,7 +279,9 @@ class Profile extends StatelessWidget {
                       children: [
                         Text('52 340', style: Styles.headline3Style),
                         const Gap(5),
-                        Text('Miles', style: Styles.subtitle1Style.copyWith(fontSize: 16)),
+                        Text('Miles',
+                            style:
+                                Styles.subtitle1Style.copyWith(fontSize: 16)),
                       ],
                     ),
                     Column(
@@ -226,14 +289,21 @@ class Profile extends StatelessWidget {
                       children: [
                         Text('Exuma', style: Styles.headline3Style),
                         const Gap(5),
-                        Text('Received from', style: Styles.subtitle1Style.copyWith(fontSize: 16)),
+                        Text('Received from',
+                            style:
+                                Styles.subtitle1Style.copyWith(fontSize: 16)),
                       ],
                     ),
                   ],
                 ),
                 const Gap(25),
                 InkWell(
-                  child: Text('How to get more miles', style: Styles.textStyle.copyWith(color: Styles.primaryColor, fontWeight: FontWeight.w500),),
+                  child: Text(
+                    'How to get more miles',
+                    style: Styles.textStyle.copyWith(
+                        color: Styles.primaryColor,
+                        fontWeight: FontWeight.w500),
+                  ),
                 ),
                 const Gap(20),
               ],

@@ -6,7 +6,7 @@ import 'package:gap/gap.dart';
 class HotelView extends StatelessWidget{
   final Map<String, dynamic> hotel;
 
-  const HotelView({Key? key, required this.hotel}) : super(key: key);
+  const HotelView({super.key, required this.hotel});
   @override
   Widget build(BuildContext context) {
     final size = Layouts.getSize(context);

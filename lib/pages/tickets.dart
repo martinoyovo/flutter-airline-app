@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class Tickets extends StatelessWidget {
-  const Tickets({Key? key}) : super(key: key);
+  const Tickets({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -95,12 +95,12 @@ class Tickets extends StatelessWidget {
                                         height: 24,
                                         child: LayoutBuilder(builder: (context,constraints){
                                           return Flex(
-                                            children: List.generate((constraints.constrainWidth()/6).floor(), (index) =>
-                                                SizedBox(height: 1,width: 3,child: DecoratedBox(decoration: BoxDecoration(color: Colors.grey.shade300),),)
-                                            ),
                                             direction: Axis.horizontal,
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            children: List.generate((constraints.constrainWidth()/6).floor(), (index) =>
+                                                SizedBox(height: 1,width: 3,child: DecoratedBox(decoration: BoxDecoration(color: Colors.grey.shade300),),)
+                                            ),
                                           );
                                         },),
                                       ),
@@ -152,12 +152,12 @@ class Tickets extends StatelessWidget {
                               padding: const EdgeInsets.all(12.0),
                               child: LayoutBuilder(builder: (context,constraints){
                                 return Flex(
-                                  children: List.generate((constraints.constrainWidth()/15).floor(), (index) =>
-                                      SizedBox(height: 1,width: 5,child: DecoratedBox(decoration: BoxDecoration(color: Colors.grey.shade300),),)
-                                  ),
                                   direction: Axis.horizontal,
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: List.generate((constraints.constrainWidth()/15).floor(), (index) =>
+                                      SizedBox(height: 1,width: 5,child: DecoratedBox(decoration: BoxDecoration(color: Colors.grey.shade300),),)
+                                  ),
                                 );
                               },),
                             ),
@@ -257,12 +257,12 @@ class Tickets extends StatelessWidget {
                                   padding: const EdgeInsets.symmetric(vertical: 20.0),
                                   child: LayoutBuilder(builder: (context,constraints){
                                     return Flex(
-                                      children: List.generate((constraints.constrainWidth()/12).floor(), (index) =>
-                                          SizedBox(height: 1,width: 5,child: DecoratedBox(decoration: BoxDecoration(color: Colors.grey.shade300),),)
-                                      ),
                                       direction: Axis.horizontal,
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: List.generate((constraints.constrainWidth()/12).floor(), (index) =>
+                                          SizedBox(height: 1,width: 5,child: DecoratedBox(decoration: BoxDecoration(color: Colors.grey.shade300),),)
+                                      ),
                                     );
                                   },),
                                 ),
@@ -291,12 +291,12 @@ class Tickets extends StatelessWidget {
                                   padding: const EdgeInsets.symmetric(vertical: 20.0),
                                   child: LayoutBuilder(builder: (context,constraints){
                                     return Flex(
-                                      children: List.generate((constraints.constrainWidth()/12).floor(), (index) =>
-                                          SizedBox(height: 1,width: 5,child: DecoratedBox(decoration: BoxDecoration(color: Colors.grey.shade300),),)
-                                      ),
                                       direction: Axis.horizontal,
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: List.generate((constraints.constrainWidth()/12).floor(), (index) =>
+                                          SizedBox(height: 1,width: 5,child: DecoratedBox(decoration: BoxDecoration(color: Colors.grey.shade300),),)
+                                      ),
                                     );
                                   },),
                                 ),

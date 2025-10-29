@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 
 /// This is the stateful widget that the main application instantiates.
 class BottomNav extends StatefulWidget {
-  const BottomNav({Key? key}) : super(key: key);
+  const BottomNav({super.key});
 
   @override
   State<BottomNav> createState() => _BottomNavState();

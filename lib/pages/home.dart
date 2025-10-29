@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+  const Home({super.key});
 
 
   @override

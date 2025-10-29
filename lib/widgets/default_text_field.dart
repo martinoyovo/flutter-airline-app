@@ -8,7 +8,7 @@ import 'package:airline_app/utils/styles.dart';
 
 class DefaultTextField extends StatelessWidget {
   const DefaultTextField({
-    Key? key,
+    super.key,
     this.focusNode,
     required this.controller,
     required this.label,
@@ -23,7 +23,7 @@ class DefaultTextField extends StatelessWidget {
     this.enabled,
     this.maxLines,
     this.hideTitle,
-  }) : super(key: key);
+  });
 
   DefaultTextField.password({
     this.enabled,
@@ -40,7 +40,7 @@ class DefaultTextField extends StatelessWidget {
     String? label,
     this.prefixIcon,
     this.hideTitle,
-    Key? key,
+    super.key,
   })  : label = isConPass ? confirmPwd : pwd,
         mandatory = true,
         suffixIcon = IconButton(
@@ -48,8 +48,7 @@ class DefaultTextField extends StatelessWidget {
             obscure ? CupertinoIcons.eye_fill : CupertinoIcons.eye_slash_fill,
           ),
           onPressed: hideShowPas,
-        ),
-        super(key: key);
+        );
 
   final FocusNode? focusNode;
   final TextEditingController? controller;
